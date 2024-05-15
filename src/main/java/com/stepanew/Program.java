@@ -1,4 +1,4 @@
-// Реализация игры "Крестики-нолики" (3x3)
+package src.main.java.com.stepanew;// Реализация игры "Крестики-нолики" (3x3)
 // Минимаксный алгоритм
 
 import java.awt.*;
@@ -284,7 +284,7 @@ class TicTacToePanel extends JPanel implements ActionListener {
       game.player1.move = -1;
       game.player2.move = -1;
       //System.out.println(game.cplayer.symbol);
-      //System.out.println(((TicTacToeCell)(ae.getSource())).getNum());
+      //System.out.println(((src.main.java.com.stepanew.TicTacToeCell)(ae.getSource())).getNum());
 
 
       int i=0;
