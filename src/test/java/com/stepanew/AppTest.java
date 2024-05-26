@@ -33,7 +33,7 @@ public class AppTest {
     @ParameterizedTest
     @CsvFileSource(resources = "/game_data.csv")
     @DisplayName("Check game states test")
-    void checkGameStateTest(
+    public void checkGameStateTest(
             String c1,
             String c2,
             String c3,
@@ -55,7 +55,7 @@ public class AppTest {
 
     @Test
     @DisplayName("Zero moves test")
-    void checkGenerateZeroMoves() {
+    public void checkGenerateZeroMoves() {
         char[] board = {
                 'X', 'O', 'X',
                 'O', 'X', 'O',
@@ -70,7 +70,7 @@ public class AppTest {
 
     @Test
     @DisplayName("Full moves test")
-    void checkGenerateFullMoves() {
+    public void checkGenerateFullMoves() {
         char[] board = {
                 ' ', ' ', ' ',
                 ' ', ' ', ' ',
@@ -113,7 +113,7 @@ public class AppTest {
 
     @Test
     @DisplayName("Minimax empty board")
-    void checkMinimaxEmptyBoard() {
+    public void checkMinimaxEmptyBoard() {
         char[] board = new char[9];
         int expectedMove = 0;
 
@@ -124,7 +124,7 @@ public class AppTest {
 
     @Test
     @DisplayName("Minimax win")
-    void checkMinimaxWin() {
+    public void checkMinimaxWin() {
         char[] board = {
                 ' ', ' ', 'X',
                 ' ', 'O', 'X',
@@ -139,7 +139,7 @@ public class AppTest {
 
     @Test
     @DisplayName("Cell constructor")
-    void checkCellInit() {
+    public void checkCellInit() {
         assertAll("Cell Constructor",
                 () -> assertDoesNotThrow(() -> new TicTacToeCell(1, 0, 2)),
                 () -> {
@@ -154,7 +154,7 @@ public class AppTest {
 
     @Test
     @DisplayName("Setting marker")
-    void checkSettingMarker() {
+    public void checkSettingMarker() {
         TicTacToeCell cell = new TicTacToeCell(1, 0, 2);
         cell.setMarker("TEST");
 
@@ -167,7 +167,7 @@ public class AppTest {
 
     @Test
     @DisplayName("Panel init")
-    void checkPanelInit() {
+    public void checkPanelInit() {
         assertDoesNotThrow(() -> {
             new TicTacToePanel(new GridLayout(3, 3));
         });
@@ -175,7 +175,7 @@ public class AppTest {
 
     @Test
     @DisplayName("Display method")
-    void checkDisplayMethod() {
+    public void checkDisplayMethod() {
         assertAll(
                 "Utility print",
                 () -> assertDoesNotThrow(() -> Utility.print(new char[]{'X', 'X', 'O', 'O', ' ', 'X', ' ', ' ', 'O'})),
