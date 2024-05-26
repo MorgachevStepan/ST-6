@@ -1,0 +1,17 @@
+X,X,X,_,_,_,_,_,_,XWIN
+_,_,_,X,X,X,_,_,_,XWIN
+_,_,_,_,_,_,X,X,X,XWIN
+X,_,_,X,_,_,X,_,_,XWIN
+_,X,_,_,X,_,_,X,_,XWIN
+_,_,X,_,_,X,_,_,X,XWIN
+X,_,_,_,X,_,_,_,X,XWIN
+_,_,X,_,X,_,X,_,_,XWIN
+O,O,O,_,_,_,_,_,_,DRAW
+_,_,_,O,O,O,_,_,_,DRAW
+_,_,_,_,_,_,O,O,O,DRAW
+O,_,_,O,_,_,O,_,_,DRAW
+_,O,_,_,O,_,_,O,_,DRAW
+_,_,O,_,_,O,_,_,O,DRAW
+O,_,_,_,O,_,_,_,O,DRAW
+_,_,O,_,O,_,O,_,_,DRAW
+X,O,X,O,X,O,O,X,_,DRAW
